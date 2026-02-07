@@ -77,7 +77,7 @@ Respond in valid JSON format with this structure:
                 "Content-Type": "application/json",
             },
             json={
-                "model": "claude-sonnet-4-20250514",
+                "model": "gemini-2.5-flash",
                 "messages": [
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt},

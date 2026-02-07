@@ -61,7 +61,7 @@ jobs:
           CREEM_WEBHOOK_SECRET=${{ secrets.CREEM_WEBHOOK_SECRET }}
           CREEM_PRODUCT_IDS=${{ secrets.CREEM_PRODUCT_IDS }}
           TOOL_NAME=future-visualizer
-          FRONTEND_PORT=3060
+          FRONTEND_PORT=3090
           BACKEND_PORT=8080
           EOF
       

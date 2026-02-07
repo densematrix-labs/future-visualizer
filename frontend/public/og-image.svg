@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ffcc"/>
+      <stop offset="100%" style="stop-color:#ff00ff"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Grid lines -->
+  <g stroke="#00ffcc" stroke-opacity="0.1" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  
+  <!-- Glow effect -->
+  <ellipse cx="600" cy="315" rx="400" ry="200" fill="#00ffcc" fill-opacity="0.05"/>
+  
+  <!-- Main title -->
+  <text x="600" y="250" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="72" font-weight="900" fill="url(#accent)">
+    AI FUTURE
+  </text>
+  <text x="600" y="340" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="72" font-weight="900" fill="url(#accent)">
+    VISUALIZER
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#e0e0e0">
+    See What Any Concept Looks Like in 10 Years
+  </text>
+  
+  <!-- Year badge -->
+  <rect x="520" y="480" width="160" height="50" rx="25" fill="none" stroke="url(#accent)" stroke-width="2"/>
+  <text x="600" y="515" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="24" fill="#00ffcc">
+    2036
+  </text>
+  
+  <!-- Corner decorations -->
+  <path d="M0,0 L80,0 L80,10 L10,10 L10,80 L0,80 Z" fill="#00ffcc" fill-opacity="0.5"/>
+  <path d="M1200,0 L1120,0 L1120,10 L1190,10 L1190,80 L1200,80 Z" fill="#ff00ff" fill-opacity="0.5"/>
+  <path d="M0,630 L80,630 L80,620 L10,620 L10,550 L0,550 Z" fill="#ff00ff" fill-opacity="0.5"/>
+  <path d="M1200,630 L1120,630 L1120,620 L1190,620 L1190,550 L1200,550 Z" fill="#00ffcc" fill-opacity="0.5"/>
+</svg>

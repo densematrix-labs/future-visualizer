@@ -49,7 +49,11 @@ export async function visualizeFuture(
     if (response.status === 402) {
       throw new Error('PAYMENT_REQUIRED')
     }
-    throw new Error(data.detail || 'Failed to generate vision')
+    // Handle detail being string or object
+    const errorMessage = typeof data.detail === 'string' 
+      ? data.detail 
+      : data.detail?.error || data.detail?.message || 'Failed to generate vision'
+    throw new Error(errorMessage)
   }
 
   return response.json()

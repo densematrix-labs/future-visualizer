@@ -1,0 +1,79 @@
+{
+  "app": {
+    "name": "Zukunfts-Visualisierer"
+  },
+  "nav": {
+    "pricing": "Preise"
+  },
+  "hero": {
+    "title": "Die Zukunft sehen",
+    "subtitle": "Geben Sie ein Produkt, eine Website oder ein Konzept ein. KI sagt voraus, wie es in 10 Jahren aussehen wird."
+  },
+  "form": {
+    "placeholder": "Produkt, Website oder Konzept eingeben...",
+    "submit": "Zukunft visualisieren",
+    "generating": "Wird generiert...",
+    "examples": "Beispiele"
+  },
+  "examples": {
+    "remoteWork": "Homeoffice",
+    "electricCars": "Elektroautos"
+  },
+  "loading": {
+    "analyzing": "Aktuelle Trends werden analysiert...",
+    "predicting": "Zukünftige Entwicklung wird vorhergesagt..."
+  },
+  "features": {
+    "tech": {
+      "title": "Technologische Evolution",
+      "desc": "Sehen Sie, wie sich Technologie im nächsten Jahrzehnt verändern und entwickeln wird."
+    },
+    "ux": {
+      "title": "Benutzererfahrung",
+      "desc": "Entdecken Sie, wie Menschen in Zukunft mit Produkten interagieren werden."
+    },
+    "society": {
+      "title": "Gesellschaftliche Auswirkungen",
+      "desc": "Verstehen Sie die breiteren gesellschaftlichen Implikationen und Veränderungen."
+    }
+  },
+  "result": {
+    "freeTrial": "Kostenlose Testversion",
+    "tokensRemaining": "Verbleibende Visionen",
+    "keyChanges": "Wichtige Änderungen"
+  },
+  "pricing": {
+    "title": "Wählen Sie Ihren Plan",
+    "subtitle": "Schalten Sie mehr Zukunftsvisionen mit unseren erschwinglichen Paketen frei",
+    "popular": "Beliebteste",
+    "visions": "Visionen",
+    "buyNow": "Jetzt kaufen",
+    "processing": "Wird verarbeitet...",
+    "guarantee": "Sichere Zahlung über Creem. Sofortige Lieferung.",
+    "starter": {
+      "name": "Starter",
+      "feature1": "5 Zukunftsvisionen",
+      "feature2": "Alle Sprachen unterstützt"
+    },
+    "standard": {
+      "name": "Standard",
+      "feature1": "15 Zukunftsvisionen",
+      "feature2": "Alle Sprachen unterstützt",
+      "feature3": "Priorisierte Generierung"
+    },
+    "pro": {
+      "name": "Pro",
+      "feature1": "50 Zukunftsvisionen",
+      "feature2": "Alle Sprachen unterstützt",
+      "feature3": "Priorisierte Generierung",
+      "feature4": "Detaillierte Analyse"
+    }
+  },
+  "success": {
+    "title": "Zahlung erfolgreich!",
+    "message": "Ihre Visionen wurden Ihrem Konto hinzugefügt.",
+    "loading": "Lade Ihre Token...",
+    "tokensAvailable": "Verfügbare Visionen",
+    "startUsing": "Visualisierung starten"
+  }
+}

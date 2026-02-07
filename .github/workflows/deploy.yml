@@ -1,0 +1,124 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  DEPLOY_PATH: /opt/demos/future-visualizer
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          
+      - name: Install backend dependencies
+        run: |
+          cd backend
+          pip install -r requirements.txt
+          pip install pytest pytest-cov pytest-asyncio httpx
+          
+      - name: Run backend tests
+        run: |
+          cd backend
+          pytest --cov=app --cov-fail-under=80 -v
+          
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install frontend dependencies
+        run: |
+          cd frontend
+          npm ci
+          
+      - name: Run frontend tests
+        run: |
+          cd frontend
+          npm test -- --run
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Create .env file from secrets
+        run: |
+          cat > .env << EOF
+          LLM_PROXY_URL=https://llm-proxy.densematrix.ai
+          LLM_PROXY_KEY=${{ secrets.LLM_PROXY_KEY }}
+          DATABASE_URL=sqlite+aiosqlite:///./data/app.db
+          CREEM_API_KEY=${{ secrets.CREEM_API_KEY }}
+          CREEM_WEBHOOK_SECRET=${{ secrets.CREEM_WEBHOOK_SECRET }}
+          CREEM_PRODUCT_IDS=${{ secrets.CREEM_PRODUCT_IDS }}
+          TOOL_NAME=future-visualizer
+          FRONTEND_PORT=3060
+          BACKEND_PORT=8080
+          EOF
+      
+      - name: Deploy to server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: |
+            cd ${{ env.DEPLOY_PATH }}
+            git pull origin main
+            
+      - name: Copy .env to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          source: ".env"
+          target: "${{ env.DEPLOY_PATH }}"
+          
+      - name: Rebuild and restart
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: |
+            cd ${{ env.DEPLOY_PATH }}
+            docker compose down
+            docker compose up -d --build
+            
+      - name: Health check
+        run: |
+          sleep 30
+          curl -sf https://future-visualizer.demo.densematrix.ai/health || exit 1
+
+  notify:
+    needs: [test, deploy]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Slack on success
+        if: ${{ needs.deploy.result == 'success' }}
+        uses: slackapi/slack-github-action@v1.26.0
+        with:
+          channel-id: 'C0AC1DWEBU3'
+          slack-message: "✅ *future-visualizer* deployed successfully\n• Commit: `${{ github.sha }}`"
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+
+      - name: Notify Slack on failure
+        if: ${{ needs.test.result == 'failure' || needs.deploy.result == 'failure' }}
+        uses: slackapi/slack-github-action@v1.26.0
+        with:
+          channel-id: 'C0AC1DWEBU3'
+          slack-message: "❌ *future-visualizer* deployment failed\n• <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Run>"
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}

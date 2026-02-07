@@ -1,0 +1,79 @@
+{
+  "app": {
+    "name": "Future Visualizer"
+  },
+  "nav": {
+    "pricing": "Pricing"
+  },
+  "hero": {
+    "title": "See the Future",
+    "subtitle": "Enter any product, website, or concept. AI will predict what it looks like in 10 years."
+  },
+  "form": {
+    "placeholder": "Enter a product, website, or concept...",
+    "submit": "Visualize Future",
+    "generating": "Generating...",
+    "examples": "Try"
+  },
+  "examples": {
+    "remoteWork": "Remote Work",
+    "electricCars": "Electric Cars"
+  },
+  "loading": {
+    "analyzing": "Analyzing current trends...",
+    "predicting": "Predicting future evolution..."
+  },
+  "features": {
+    "tech": {
+      "title": "Technology Evolution",
+      "desc": "See how technology will transform and evolve over the next decade."
+    },
+    "ux": {
+      "title": "User Experience",
+      "desc": "Discover how people will interact with products in the future."
+    },
+    "society": {
+      "title": "Social Impact",
+      "desc": "Understand the broader societal implications and changes."
+    }
+  },
+  "result": {
+    "freeTrial": "Free Trial",
+    "tokensRemaining": "Visions remaining",
+    "keyChanges": "Key Changes"
+  },
+  "pricing": {
+    "title": "Choose Your Plan",
+    "subtitle": "Unlock more future visions with our affordable packages",
+    "popular": "Most Popular",
+    "visions": "visions",
+    "buyNow": "Buy Now",
+    "processing": "Processing...",
+    "guarantee": "Secure payment via Creem. Instant delivery.",
+    "starter": {
+      "name": "Starter",
+      "feature1": "5 future visions",
+      "feature2": "All languages supported"
+    },
+    "standard": {
+      "name": "Standard",
+      "feature1": "15 future visions",
+      "feature2": "All languages supported",
+      "feature3": "Priority generation"
+    },
+    "pro": {
+      "name": "Pro",
+      "feature1": "50 future visions",
+      "feature2": "All languages supported",
+      "feature3": "Priority generation",
+      "feature4": "Detailed analysis"
+    }
+  },
+  "success": {
+    "title": "Payment Successful!",
+    "message": "Your visions have been added to your account.",
+    "loading": "Loading your tokens...",
+    "tokensAvailable": "Visions available",
+    "startUsing": "Start Visualizing"
+  }
+}

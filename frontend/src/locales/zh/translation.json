@@ -1,0 +1,79 @@
+{
+  "app": {
+    "name": "未来畅想器"
+  },
+  "nav": {
+    "pricing": "价格"
+  },
+  "hero": {
+    "title": "预见未来",
+    "subtitle": "输入任何产品、网站或概念，AI 将预测它 10 年后的样子。"
+  },
+  "form": {
+    "placeholder": "输入一个产品、网站或概念...",
+    "submit": "畅想未来",
+    "generating": "生成中...",
+    "examples": "试试"
+  },
+  "examples": {
+    "remoteWork": "远程办公",
+    "electricCars": "电动汽车"
+  },
+  "loading": {
+    "analyzing": "分析当前趋势...",
+    "predicting": "预测未来演变..."
+  },
+  "features": {
+    "tech": {
+      "title": "技术演进",
+      "desc": "了解技术在未来十年将如何变革和发展。"
+    },
+    "ux": {
+      "title": "用户体验",
+      "desc": "发现人们未来将如何与产品互动。"
+    },
+    "society": {
+      "title": "社会影响",
+      "desc": "理解更广泛的社会影响和变化。"
+    }
+  },
+  "result": {
+    "freeTrial": "免费试用",
+    "tokensRemaining": "剩余次数",
+    "keyChanges": "关键变化"
+  },
+  "pricing": {
+    "title": "选择套餐",
+    "subtitle": "用实惠的价格解锁更多未来畅想",
+    "popular": "最受欢迎",
+    "visions": "次畅想",
+    "buyNow": "立即购买",
+    "processing": "处理中...",
+    "guarantee": "通过 Creem 安全支付，即时到账。",
+    "starter": {
+      "name": "入门版",
+      "feature1": "5 次未来畅想",
+      "feature2": "支持所有语言"
+    },
+    "standard": {
+      "name": "标准版",
+      "feature1": "15 次未来畅想",
+      "feature2": "支持所有语言",
+      "feature3": "优先生成"
+    },
+    "pro": {
+      "name": "专业版",
+      "feature1": "50 次未来畅想",
+      "feature2": "支持所有语言",
+      "feature3": "优先生成",
+      "feature4": "详细分析"
+    }
+  },
+  "success": {
+    "title": "支付成功！",
+    "message": "畅想次数已添加到您的账户。",
+    "loading": "加载中...",
+    "tokensAvailable": "可用次数",
+    "startUsing": "开始畅想"
+  }
+}

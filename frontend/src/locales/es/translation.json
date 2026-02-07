@@ -1,0 +1,79 @@
+{
+  "app": {
+    "name": "Visualizador del Futuro"
+  },
+  "nav": {
+    "pricing": "Precios"
+  },
+  "hero": {
+    "title": "Ver el Futuro",
+    "subtitle": "Ingresa cualquier producto, sitio web o concepto. La IA predecirá cómo se verá en 10 años."
+  },
+  "form": {
+    "placeholder": "Ingresa un producto, sitio web o concepto...",
+    "submit": "Visualizar futuro",
+    "generating": "Generando...",
+    "examples": "Probar"
+  },
+  "examples": {
+    "remoteWork": "Trabajo remoto",
+    "electricCars": "Autos eléctricos"
+  },
+  "loading": {
+    "analyzing": "Analizando tendencias actuales...",
+    "predicting": "Prediciendo evolución futura..."
+  },
+  "features": {
+    "tech": {
+      "title": "Evolución Tecnológica",
+      "desc": "Mira cómo la tecnología se transformará y evolucionará en la próxima década."
+    },
+    "ux": {
+      "title": "Experiencia de Usuario",
+      "desc": "Descubre cómo las personas interactuarán con los productos en el futuro."
+    },
+    "society": {
+      "title": "Impacto Social",
+      "desc": "Comprende las implicaciones sociales más amplias y los cambios."
+    }
+  },
+  "result": {
+    "freeTrial": "Prueba gratuita",
+    "tokensRemaining": "Visiones restantes",
+    "keyChanges": "Cambios clave"
+  },
+  "pricing": {
+    "title": "Elige tu plan",
+    "subtitle": "Desbloquea más visiones del futuro con nuestros paquetes accesibles",
+    "popular": "Más popular",
+    "visions": "visiones",
+    "buyNow": "Comprar ahora",
+    "processing": "Procesando...",
+    "guarantee": "Pago seguro a través de Creem. Entrega instantánea.",
+    "starter": {
+      "name": "Inicial",
+      "feature1": "5 visiones del futuro",
+      "feature2": "Todos los idiomas soportados"
+    },
+    "standard": {
+      "name": "Estándar",
+      "feature1": "15 visiones del futuro",
+      "feature2": "Todos los idiomas soportados",
+      "feature3": "Generación prioritaria"
+    },
+    "pro": {
+      "name": "Pro",
+      "feature1": "50 visiones del futuro",
+      "feature2": "Todos los idiomas soportados",
+      "feature3": "Generación prioritaria",
+      "feature4": "Análisis detallado"
+    }
+  },
+  "success": {
+    "title": "¡Pago exitoso!",
+    "message": "Tus visiones han sido añadidas a tu cuenta.",
+    "loading": "Cargando tus tokens...",
+    "tokensAvailable": "Visiones disponibles",
+    "startUsing": "Comenzar a visualizar"
+  }
+}

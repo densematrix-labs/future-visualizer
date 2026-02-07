@@ -1,0 +1,79 @@
+{
+  "app": {
+    "name": "미래 비주얼라이저"
+  },
+  "nav": {
+    "pricing": "가격"
+  },
+  "hero": {
+    "title": "미래를 보다",
+    "subtitle": "제품, 웹사이트 또는 개념을 입력하세요. AI가 10년 후의 모습을 예측합니다."
+  },
+  "form": {
+    "placeholder": "제품, 웹사이트 또는 개념 입력...",
+    "submit": "미래 예측",
+    "generating": "생성 중...",
+    "examples": "예시"
+  },
+  "examples": {
+    "remoteWork": "재택근무",
+    "electricCars": "전기차"
+  },
+  "loading": {
+    "analyzing": "현재 트렌드 분석 중...",
+    "predicting": "미래 진화 예측 중..."
+  },
+  "features": {
+    "tech": {
+      "title": "기술 진화",
+      "desc": "향후 10년간 기술이 어떻게 변화하고 발전할지 확인하세요."
+    },
+    "ux": {
+      "title": "사용자 경험",
+      "desc": "미래에 사람들이 제품과 어떻게 상호작용할지 알아보세요."
+    },
+    "society": {
+      "title": "사회적 영향",
+      "desc": "더 넓은 사회적 의미와 변화를 이해하세요."
+    }
+  },
+  "result": {
+    "freeTrial": "무료 체험",
+    "tokensRemaining": "남은 비전",
+    "keyChanges": "주요 변화"
+  },
+  "pricing": {
+    "title": "플랜 선택",
+    "subtitle": "합리적인 가격으로 더 많은 미래 비전을 잠금 해제하세요",
+    "popular": "인기",
+    "visions": "비전",
+    "buyNow": "구매하기",
+    "processing": "처리 중...",
+    "guarantee": "Creem을 통한 안전한 결제. 즉시 제공.",
+    "starter": {
+      "name": "스타터",
+      "feature1": "5회 미래 비전",
+      "feature2": "모든 언어 지원"
+    },
+    "standard": {
+      "name": "스탠다드",
+      "feature1": "15회 미래 비전",
+      "feature2": "모든 언어 지원",
+      "feature3": "우선 생성"
+    },
+    "pro": {
+      "name": "프로",
+      "feature1": "50회 미래 비전",
+      "feature2": "모든 언어 지원",
+      "feature3": "우선 생성",
+      "feature4": "상세 분석"
+    }
+  },
+  "success": {
+    "title": "결제 완료!",
+    "message": "비전이 계정에 추가되었습니다.",
+    "loading": "토큰 로딩 중...",
+    "tokensAvailable": "사용 가능한 비전",
+    "startUsing": "시각화 시작"
+  }
+}

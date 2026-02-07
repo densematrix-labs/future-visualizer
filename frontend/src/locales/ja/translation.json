@@ -1,0 +1,79 @@
+{
+  "app": {
+    "name": "未来ビジュアライザー"
+  },
+  "nav": {
+    "pricing": "料金"
+  },
+  "hero": {
+    "title": "未来を見る",
+    "subtitle": "製品、ウェブサイト、コンセプトを入力してください。AIが10年後の姿を予測します。"
+  },
+  "form": {
+    "placeholder": "製品、ウェブサイト、またはコンセプトを入力...",
+    "submit": "未来を予測",
+    "generating": "生成中...",
+    "examples": "例"
+  },
+  "examples": {
+    "remoteWork": "リモートワーク",
+    "electricCars": "電気自動車"
+  },
+  "loading": {
+    "analyzing": "現在のトレンドを分析中...",
+    "predicting": "未来の進化を予測中..."
+  },
+  "features": {
+    "tech": {
+      "title": "テクノロジーの進化",
+      "desc": "今後10年間でテクノロジーがどのように変革し進化するかを見る。"
+    },
+    "ux": {
+      "title": "ユーザー体験",
+      "desc": "将来、人々がどのように製品と対話するかを発見する。"
+    },
+    "society": {
+      "title": "社会への影響",
+      "desc": "より広い社会的影響と変化を理解する。"
+    }
+  },
+  "result": {
+    "freeTrial": "無料トライアル",
+    "tokensRemaining": "残りビジョン数",
+    "keyChanges": "主な変化"
+  },
+  "pricing": {
+    "title": "プランを選択",
+    "subtitle": "お手頃な価格でより多くの未来ビジョンを解放",
+    "popular": "人気",
+    "visions": "ビジョン",
+    "buyNow": "購入する",
+    "processing": "処理中...",
+    "guarantee": "Creemによる安全な支払い。即時配信。",
+    "starter": {
+      "name": "スターター",
+      "feature1": "5回の未来ビジョン",
+      "feature2": "全言語対応"
+    },
+    "standard": {
+      "name": "スタンダード",
+      "feature1": "15回の未来ビジョン",
+      "feature2": "全言語対応",
+      "feature3": "優先生成"
+    },
+    "pro": {
+      "name": "プロ",
+      "feature1": "50回の未来ビジョン",
+      "feature2": "全言語対応",
+      "feature3": "優先生成",
+      "feature4": "詳細分析"
+    }
+  },
+  "success": {
+    "title": "支払い完了！",
+    "message": "ビジョンがアカウントに追加されました。",
+    "loading": "トークンを読み込み中...",
+    "tokensAvailable": "利用可能なビジョン",
+    "startUsing": "ビジュアライズを開始"
+  }
+}

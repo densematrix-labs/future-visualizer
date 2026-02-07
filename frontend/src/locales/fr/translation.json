@@ -1,0 +1,79 @@
+{
+  "app": {
+    "name": "Visualiseur du Futur"
+  },
+  "nav": {
+    "pricing": "Tarifs"
+  },
+  "hero": {
+    "title": "Voir le Futur",
+    "subtitle": "Entrez un produit, un site web ou un concept. L'IA prédira à quoi il ressemblera dans 10 ans."
+  },
+  "form": {
+    "placeholder": "Entrez un produit, site web ou concept...",
+    "submit": "Visualiser le futur",
+    "generating": "Génération...",
+    "examples": "Essayer"
+  },
+  "examples": {
+    "remoteWork": "Télétravail",
+    "electricCars": "Voitures électriques"
+  },
+  "loading": {
+    "analyzing": "Analyse des tendances actuelles...",
+    "predicting": "Prédiction de l'évolution future..."
+  },
+  "features": {
+    "tech": {
+      "title": "Évolution Technologique",
+      "desc": "Voyez comment la technologie se transformera et évoluera au cours de la prochaine décennie."
+    },
+    "ux": {
+      "title": "Expérience Utilisateur",
+      "desc": "Découvrez comment les gens interagiront avec les produits à l'avenir."
+    },
+    "society": {
+      "title": "Impact Social",
+      "desc": "Comprenez les implications sociétales plus larges et les changements."
+    }
+  },
+  "result": {
+    "freeTrial": "Essai gratuit",
+    "tokensRemaining": "Visions restantes",
+    "keyChanges": "Changements clés"
+  },
+  "pricing": {
+    "title": "Choisissez votre forfait",
+    "subtitle": "Débloquez plus de visions du futur avec nos forfaits abordables",
+    "popular": "Plus populaire",
+    "visions": "visions",
+    "buyNow": "Acheter maintenant",
+    "processing": "Traitement...",
+    "guarantee": "Paiement sécurisé via Creem. Livraison instantanée.",
+    "starter": {
+      "name": "Starter",
+      "feature1": "5 visions du futur",
+      "feature2": "Toutes les langues supportées"
+    },
+    "standard": {
+      "name": "Standard",
+      "feature1": "15 visions du futur",
+      "feature2": "Toutes les langues supportées",
+      "feature3": "Génération prioritaire"
+    },
+    "pro": {
+      "name": "Pro",
+      "feature1": "50 visions du futur",
+      "feature2": "Toutes les langues supportées",
+      "feature3": "Génération prioritaire",
+      "feature4": "Analyse détaillée"
+    }
+  },
+  "success": {
+    "title": "Paiement réussi !",
+    "message": "Vos visions ont été ajoutées à votre compte.",
+    "loading": "Chargement de vos tokens...",
+    "tokensAvailable": "Visions disponibles",
+    "startUsing": "Commencer à visualiser"
+  }
+}

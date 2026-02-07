@@ -1,0 +1,302 @@
+/* AI Future Visualizer - Retro-Futuristic / Cyberpunk Aesthetic */
+
+:root {
+  /* Core Colors - Neon Cyberpunk */
+  --color-bg-dark: #0a0a0f;
+  --color-bg-darker: #050508;
+  --color-bg-panel: rgba(15, 15, 25, 0.9);
+  
+  /* Neon accents */
+  --color-cyan: #00fff2;
+  --color-magenta: #ff00ff;
+  --color-yellow: #ffff00;
+  --color-green: #00ff66;
+  --color-orange: #ff6600;
+  
+  /* Text */
+  --color-text-primary: #e0e0e0;
+  --color-text-secondary: #888888;
+  --color-text-glow: #00fff2;
+  
+  /* Grid/Lines */
+  --color-grid: rgba(0, 255, 242, 0.1);
+  --color-border: rgba(0, 255, 242, 0.3);
+  
+  /* Typography */
+  --font-display: 'Orbitron', sans-serif;
+  --font-mono: 'VT323', monospace;
+  --font-body: 'Rajdhani', sans-serif;
+  
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  
+  /* Effects */
+  --glow-cyan: 0 0 10px var(--color-cyan), 0 0 20px var(--color-cyan), 0 0 30px var(--color-cyan);
+  --glow-magenta: 0 0 10px var(--color-magenta), 0 0 20px var(--color-magenta);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* CRT Scanlines Effect */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.1) 2px,
+    rgba(0, 0, 0, 0.1) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Grid Background */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(var(--color-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-shadow: var(--glow-cyan);
+  color: var(--color-cyan);
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: var(--color-magenta);
+  text-shadow: var(--glow-magenta);
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: var(--color-yellow);
+}
+
+/* Links */
+a {
+  color: var(--color-cyan);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-magenta);
+  text-shadow: var(--glow-magenta);
+}
+
+/* Buttons */
+button, .btn {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: var(--space-md) var(--space-lg);
+  border: 2px solid var(--color-cyan);
+  background: transparent;
+  color: var(--color-cyan);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover, .btn:hover {
+  background: var(--color-cyan);
+  color: var(--color-bg-dark);
+  box-shadow: var(--glow-cyan);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background: transparent;
+  color: var(--color-cyan);
+  box-shadow: none;
+}
+
+/* Primary Button */
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-magenta) 100%);
+  border: none;
+  color: var(--color-bg-dark);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 20px var(--color-cyan), 0 0 40px var(--color-magenta);
+}
+
+/* Inputs */
+input, textarea {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  padding: var(--space-md);
+  background: var(--color-bg-darker);
+  border: 2px solid var(--color-border);
+  color: var(--color-text-primary);
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 10px rgba(0, 255, 242, 0.3);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--color-text-secondary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-darker);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-cyan);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-magenta);
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-glow {
+  text-shadow: var(--glow-cyan);
+}
+
+/* Animations */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-flicker {
+  animation: flicker 0.1s infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Terminal cursor */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.2em;
+  background: var(--color-cyan);
+  animation: blink 1s infinite;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  .container {
+    padding: 0 var(--space-md);
+  }
+}
+
+/* CJK Font Fallbacks */
+:lang(zh), :lang(ja), :lang(ko) {
+  font-family: var(--font-body), "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", sans-serif;
+}
+
+:lang(zh) h1, :lang(zh) h2, :lang(zh) h3,
+:lang(ja) h1, :lang(ja) h2, :lang(ja) h3,
+:lang(ko) h1, :lang(ko) h2, :lang(ko) h3 {
+  font-family: var(--font-display), "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", sans-serif;
+}

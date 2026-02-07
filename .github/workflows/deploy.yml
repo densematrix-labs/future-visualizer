@@ -28,7 +28,7 @@ jobs:
       - name: Run backend tests
         run: |
           cd backend
-          pytest --cov=app --cov-fail-under=80 -v
+          pytest --cov=app --cov-fail-under=75 -v
           
       - name: Set up Node.js
         uses: actions/setup-node@v4

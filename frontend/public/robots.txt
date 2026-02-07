@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://future-visualizer.demo.densematrix.ai/sitemap.xml

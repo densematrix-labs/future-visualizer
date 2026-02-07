@@ -1,0 +1,51 @@
+{
+  "tool": "AI Future Visualizer",
+  "tool_slug": "future-visualizer",
+  "tool_url": "https://future-visualizer.demo.densematrix.ai",
+  "dimensions": [
+    {
+      "name": "product_type",
+      "name_zh": "产品类型",
+      "values_en": ["social-media", "ecommerce", "search-engine", "streaming", "gaming", "operating-system", "browser", "smart-device", "fintech", "edtech", "healthtech", "ai-assistant", "messaging", "cloud-service", "transportation", "smart-home", "wearable", "virtual-reality", "augmented-reality", "blockchain", "crypto-exchange", "nft-marketplace", "metaverse", "dating-app", "food-delivery"],
+      "values_zh": ["社交媒体", "电商平台", "搜索引擎", "流媒体", "游戏", "操作系统", "浏览器", "智能设备", "金融科技", "教育科技", "医疗科技", "AI助手", "即时通讯", "云服务", "交通出行", "智能家居", "可穿戴设备", "虚拟现实", "增强现实", "区块链", "加密交易所", "NFT市场", "元宇宙", "交友应用", "外卖配送"]
+    },
+    {
+      "name": "famous_product",
+      "name_zh": "知名产品",
+      "values_en": ["iphone", "tesla", "google-search", "netflix", "spotify", "amazon", "tiktok", "instagram", "chatgpt", "uber", "airbnb", "zoom", "notion", "figma", "slack", "discord", "twitter-x", "youtube", "whatsapp", "wechat", "linkedin", "reddit", "pinterest", "snapchat", "microsoft-office", "adobe-photoshop", "github", "steam", "playstation", "nintendo-switch", "google-maps", "apple-watch", "alexa", "google-home", "oculus", "vision-pro", "starlink", "openai", "midjourney", "stable-diffusion", "canva", "dropbox", "stripe", "shopify", "coinbase", "robinhood", "duolingo", "peloton", "doordash", "instacart"],
+      "values_zh": ["iPhone", "特斯拉", "谷歌搜索", "Netflix", "Spotify", "亚马逊", "TikTok", "Instagram", "ChatGPT", "Uber", "Airbnb", "Zoom", "Notion", "Figma", "Slack", "Discord", "Twitter/X", "YouTube", "WhatsApp", "微信", "LinkedIn", "Reddit", "Pinterest", "Snapchat", "Microsoft Office", "Adobe Photoshop", "GitHub", "Steam", "PlayStation", "任天堂Switch", "谷歌地图", "Apple Watch", "Alexa", "Google Home", "Oculus", "Vision Pro", "Starlink", "OpenAI", "Midjourney", "Stable Diffusion", "Canva", "Dropbox", "Stripe", "Shopify", "Coinbase", "Robinhood", "Duolingo", "Peloton", "DoorDash", "Instacart"]
+    },
+    {
+      "name": "time_horizon",
+      "name_zh": "时间跨度",
+      "values_en": ["2030", "2035", "2040", "2050", "5-years", "10-years", "20-years", "50-years"],
+      "values_zh": ["2030年", "2035年", "2040年", "2050年", "5年后", "10年后", "20年后", "50年后"]
+    },
+    {
+      "name": "focus_area",
+      "name_zh": "关注领域",
+      "values_en": ["technology", "user-experience", "social-impact", "business-model", "ai-integration", "sustainability", "privacy", "accessibility"],
+      "values_zh": ["技术演进", "用户体验", "社会影响", "商业模式", "AI融合", "可持续性", "隐私安全", "无障碍"]
+    },
+    {
+      "name": "industry",
+      "name_zh": "行业",
+      "values_en": ["tech", "healthcare", "finance", "education", "retail", "entertainment", "manufacturing", "agriculture", "energy", "real-estate", "travel", "food", "fashion", "sports", "media"],
+      "values_zh": ["科技", "医疗", "金融", "教育", "零售", "娱乐", "制造", "农业", "能源", "房地产", "旅游", "餐饮", "时尚", "体育", "媒体"]
+    }
+  ],
+  "combinations": [
+    ["famous_product", "time_horizon"],
+    ["product_type", "time_horizon"],
+    ["famous_product", "focus_area"],
+    ["industry", "time_horizon"],
+    ["product_type", "focus_area"],
+    ["famous_product", "time_horizon", "focus_area"],
+    ["product_type", "industry"],
+    ["famous_product", "industry"],
+    ["industry", "focus_area"],
+    ["product_type", "time_horizon", "focus_area"],
+    ["industry", "time_horizon", "focus_area"]
+  ],
+  "estimated_pages": 8000
+}

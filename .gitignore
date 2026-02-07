@@ -40,3 +40,9 @@ htmlcov/
 # Logs
 *.log
 logs/
+
+# Programmatic SEO generated files (generated at build time)
+frontend/public/p/
+frontend/public/sitemap-programmatic.xml
+frontend/public/sitemap-main.xml
+frontend/public/sitemap.xml
